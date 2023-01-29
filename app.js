@@ -7,7 +7,7 @@ gsap.to(".my-name1", {
     end: "+=120%",
     pinSpacing: false,
   },
-  color: "white",
+  color: "black",
   immediateRender: false,
   x: 50,
   y: 300,
@@ -21,7 +21,7 @@ gsap.to(".my-name2", {
     end: "+=120%",
     pinSpacing: false,
   },
-  color: "white",
+  color: "black",
   immediateRender: false,
   x: -50,
   y: 300,
@@ -52,6 +52,6 @@ gsap.to(".my-proj", {
 ScrollTrigger.create({
   snap: {
     snapTo: 1 / 2,
-    duration: 2,
+    duration: 0.5,
   },
 });

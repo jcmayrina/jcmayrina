@@ -37,12 +37,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(0, 29, 36, 1) 64%,
-    rgba(9, 9, 9, 1) 100%
+  background-image: linear-gradient(
+    to bottom,
+    #001025,
+    #001526,
+    #001827,
+    #001b27,
+    #001e26,
+    #021d25,
+    #031d24,
+    #051c23,
+    #041720,
+    #03121c,
+    #020a18,
+    #010112
   );
 }
 .my-img {
@@ -56,20 +64,20 @@ body {
 .my-name1 {
   font-family: "Unbounded", cursive;
   font-size: 5vw;
-  font-weight: 300;
+  font-weight: 500;
   mix-blend-mode: difference;
   position: absolute;
-  color: #3d3d3d;
+  color: #ffffff;
   top: 40vh;
   left: 10vw;
 }
 .my-name2 {
   font-family: "Unbounded", cursive;
   font-size: 5vw;
-  font-weight: 300;
+  font-weight: 500;
   mix-blend-mode: difference;
   position: absolute;
-  color: #3d3d3d;
+  color: #ffffff;
   top: 40vh;
   right: 10vw;
 }
@@ -78,7 +86,7 @@ body {
   font-size: 15vw;
   font-weight: 600;
   position: absolute;
-  color: #3d3d3d;
+  color: #ffffff;
   mix-blend-mode: difference;
   top: -22vh;
   left: 50%;
@@ -87,6 +95,20 @@ body {
 }
 .my-name3-con {
   mix-blend-mode: difference;
+}
+.my-job-name {
+  width: max-content;
+  font-family: "Unbounded", cursive;
+  font-size: 3vw;
+  font-weight: 700;
+  position: absolute;
+  color: white;
+  mix-blend-mode: soft-light;
+  top: 60vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  opacity: 0.4;
 }
 section {
   display: grid;
