@@ -1,43 +1,42 @@
 gsap.to(".my-name1", {
   scrollTrigger: {
     trigger: ".my-name1",
-    scrub: 2,
+    scrub: 3,
     pin: true,
-    start: "-370vh",
-    end: "+=200%",
+    start: "top top",
+    end: "+=120%",
     pinSpacing: false,
-    snap: 1,
-    markers: true,
   },
   color: "white",
   immediateRender: false,
   x: 50,
+  y: 300,
 });
 gsap.to(".my-name2", {
   scrollTrigger: {
     trigger: ".my-name2",
-    scrub: 1,
+    scrub: 3,
     pin: true,
-    start: "-370vh",
-    end: "+=200%",
+    start: "top top",
+    end: "+=120%",
     pinSpacing: false,
-    snap: 1,
   },
   color: "white",
   immediateRender: false,
   x: -50,
+  y: 300,
 });
 
 gsap.to(".my-name3", {
   scrollTrigger: {
     trigger: ".my-name3-con",
-    scrub: 1,
+    scrub: 4,
     pin: true,
-    start: "-370vh",
-    end: "+=200%",
+    start: "top top",
+    end: "bottom",
     pinSpacing: false,
   },
-  y: 300,
+  y: 1100,
   color: "white",
   immediateRender: false,
 });
@@ -46,9 +45,13 @@ gsap.to(".my-proj", {
   scrollTrigger: {
     trigger: ".my-img-end",
     scrub: 0.1,
-    snap: 1,
-    start: "top",
-    end: "+=107%",
-    markers: true,
+    start: "top top",
+    bottom: "bottom 50%",
+  },
+});
+ScrollTrigger.create({
+  snap: {
+    snapTo: 1 / 2,
+    duration: 2,
   },
 });

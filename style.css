@@ -37,13 +37,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, #2e2e2e, #000000);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 29, 36, 1) 64%,
+    rgba(9, 9, 9, 1) 100%
+  );
 }
 .my-img {
   background: url("./image/me.png") no-repeat center;
   background-size: contain;
   height: 100vh;
-  background-attachment: fixed;
   margin: 0 !important;
   padding: 0 !important;
   border: none !important;
@@ -97,7 +102,7 @@ section img {
 .my-proj {
   display: block;
   background: #050505;
-  height: 300vh;
+  height: 100vh;
   color: #f0f8ff;
 }
 .my-proj h5 {
