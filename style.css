@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap");
 /* Fonts
-font-family: "Playfair Display", serif;
+font-family: 'Roboto Mono', monospace;
 font-family: "Unbounded", cursive;
  */
 html,
@@ -10,7 +10,7 @@ body {
   background: linear-gradient(to right, #050505, #333333);
   color: #f0f8ff;
   overflow-x: hidden !important;
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto Mono", monospace;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -110,28 +110,102 @@ body {
   transform: translateX(-50%);
   opacity: 0.4;
 }
-section {
-  display: grid;
-  justify-content: center;
-  text-align: center;
-  min-height: 100vh;
-  font-size: 50px;
-}
-section img {
-  margin: 0;
-  width: 99vw;
-}
 .my-proj {
-  display: block;
-  background: #050505;
-  height: 100vh;
+  background-image: linear-gradient(
+    to top,
+    #070707,
+    #090909,
+    #0b0b0b,
+    #0d0d0d,
+    #0f0f0f,
+    #0f0f10,
+    #0e0e10,
+    #0e0e11,
+    #0b0b11,
+    #080812,
+    #040412,
+    #010112
+  );
+  height: 300vh;
   color: #f0f8ff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-.my-proj h5 {
-  font-size: 20px;
+.my-proj h1 {
+  font-family: "Unbounded", cursive;
+  padding: 2vw 0 1vw 0;
+  font-size: clamp(1rem, 10vw, 2rem);
+}
+.my-proj .card {
+  margin-top: 0;
+  margin-bottom: 9vw;
+  height: max-content;
+  border-radius: 20px;
+  max-width: 70vw;
+  min-height: 35vw;
+  background: #141414;
+  justify-content: center;
+}
+.my-proj .title-card {
+  font-size: clamp(1rem, 10vw, 2rem);
+}
+.my-proj .desc-card {
+  font-size: clamp(0.5rem, 5vw, 1rem);
+}
+@media only screen and (max-width: 1450px) {
+  .my-name1 {
+    top: 41vh;
+  }
+  .my-name2 {
+    top: 41vh;
+  }
+  .my-name3 {
+    top: -17vh;
+  }
+  .my-job-name {
+    top: 90vh;
+    opacity: 1;
+    mix-blend-mode: soft-light;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .my-name1 {
+    top: 39vh;
+  }
+  .my-name2 {
+    top: 39vh;
+  }
+  .my-name3 {
+    top: -17vh;
+  }
+  .my-job-name {
+    top: 90vh;
+    opacity: 1;
+    mix-blend-mode: soft-light;
+  }
 }
 @media only screen and (max-width: 1020px) {
   .my-img {
     background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .my-name1 {
+    top: 26vh;
+  }
+  .my-name2 {
+    top: 26vh;
+  }
+  .my-name3 {
+    top: -27vh;
+  }
+  .my-job-name {
+    top: 95vh;
+    opacity: 1;
+    mix-blend-mode: unset;
   }
 }
