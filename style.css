@@ -10,6 +10,7 @@ body {
   background: linear-gradient(to right, #050505, #333333);
   color: #f0f8ff;
   overflow-x: hidden !important;
+  font-family: "Playfair Display", serif;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -18,7 +19,7 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #333333;
+  background: #000000;
 }
 
 /* Handle */
@@ -36,9 +37,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #000000;
-}
-.img-con {
+  background: linear-gradient(to bottom, #2e2e2e, #000000);
 }
 .my-img {
   background: url("./image/me.png") no-repeat center;
@@ -87,10 +86,8 @@ body {
 section {
   display: grid;
   justify-content: center;
-  align-content: center;
   text-align: center;
   min-height: 100vh;
-  font-family: "Playfair Display", serif;
   font-size: 50px;
 }
 section img {
@@ -98,8 +95,13 @@ section img {
   width: 99vw;
 }
 .my-proj {
+  display: block;
   background: #050505;
   height: 300vh;
+  color: #f0f8ff;
+}
+.my-proj h5 {
+  font-size: 20px;
 }
 @media only screen and (max-width: 1020px) {
   .my-img {
