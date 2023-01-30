@@ -37,7 +37,6 @@ if (w <= 650) {
       start: "-250px",
       end: "bottom",
       pinSpacing: false,
-      markers: true,
     },
     x: 0,
     y: 900,
