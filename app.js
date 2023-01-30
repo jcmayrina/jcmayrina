@@ -32,14 +32,14 @@ if (w <= 650) {
   gsap.to(".my-name3", {
     scrollTrigger: {
       trigger: ".my-name3-con",
-      scrub: 10,
+      scrub: 7,
       pin: true,
       start: "-250px",
       end: "bottom",
       pinSpacing: false,
     },
     x: 0,
-    y: 900,
+    y: 800,
     color: "white",
     immediateRender: false,
   });
