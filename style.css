@@ -37,21 +37,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(
-    to bottom,
-    #001025,
-    #001526,
-    #001827,
-    #001b27,
-    #001e26,
-    #021d25,
-    #031d24,
-    #051c23,
-    #041720,
-    #03121c,
-    #020a18,
-    #010112
-  );
 }
 .my-img {
   background: url("./image/me.png") no-repeat center;
@@ -68,7 +53,7 @@ body {
   mix-blend-mode: difference;
   position: absolute;
   color: #ffffff;
-  top: 40vh;
+  top: 20vh;
   left: 10vw;
 }
 .my-name2 {
@@ -78,7 +63,7 @@ body {
   mix-blend-mode: difference;
   position: absolute;
   color: #ffffff;
-  top: 40vh;
+  top: 20vh;
   right: 10vw;
 }
 .my-name3 {
@@ -88,7 +73,7 @@ body {
   position: absolute;
   color: #ffffff;
   mix-blend-mode: difference;
-  top: -22vh;
+  top: -42vh;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -103,12 +88,66 @@ body {
   font-weight: 700;
   position: absolute;
   color: white;
-  mix-blend-mode: soft-light;
-  top: 60vh;
+  top: 45vh;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   opacity: 0.4;
+}
+.my-job-name span {
+  background: -webkit-linear-gradient(60deg, #e251e2, #62f8df);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.scroll-down {
+  position: absolute;
+  top: 90vh;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transform: rotate(-90deg) translate3d(-10px, 0, 0);
+}
+.scroll-down .line {
+  position: relative;
+  width: 60px;
+  height: 2px;
+  border-radius: 2px;
+  overflow: hidden;
+  background: #ffffff;
+  z-index: 2;
+  animation: line-anim 3s linear infinite;
+}
+.scroll-text {
+  position: absolute;
+  top: 80vh;
+  z-index: 2;
+  transform: rotate(-90deg);
+}
+
+.scroll-down::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes line-anim {
+  0% {
+    right: 0;
+  }
+
+  50% {
+    right: 40%;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    right: 0;
+  }
 }
 .my-proj {
   background-image: linear-gradient(
@@ -139,12 +178,11 @@ body {
   font-size: clamp(1rem, 10vw, 2rem);
 }
 .my-proj .card {
-  margin-top: 0;
-  margin-bottom: 9vw;
+  margin-bottom: 25vh;
   height: max-content;
   border-radius: 20px;
   max-width: 70vw;
-  min-height: 35vw;
+  min-height: 70vh;
   background: #141414;
   justify-content: center;
 }
@@ -156,18 +194,17 @@ body {
 }
 @media only screen and (max-width: 1450px) {
   .my-name1 {
-    top: 41vh;
+    top: 11vh;
   }
   .my-name2 {
-    top: 41vh;
+    top: 11vh;
   }
   .my-name3 {
-    top: -17vh;
+    top: -47vh;
   }
   .my-job-name {
-    top: 90vh;
+    top: 35vh;
     opacity: 1;
-    mix-blend-mode: soft-light;
   }
 }
 
@@ -184,7 +221,6 @@ body {
   .my-job-name {
     top: 90vh;
     opacity: 1;
-    mix-blend-mode: soft-light;
   }
 }
 @media only screen and (max-width: 1020px) {
@@ -206,6 +242,5 @@ body {
   .my-job-name {
     top: 95vh;
     opacity: 1;
-    mix-blend-mode: unset;
   }
 }
