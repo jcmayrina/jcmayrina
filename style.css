@@ -98,6 +98,7 @@ body {
   background: -webkit-linear-gradient(60deg, #e251e2, #62f8df);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  margin-right: -1.1vw;
 }
 .scroll-down {
   position: absolute;
