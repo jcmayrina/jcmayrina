@@ -81,6 +81,43 @@ body {
 .my-name3-con {
   mix-blend-mode: difference;
 }
+
+.my-name1b {
+  font-family: "Unbounded", cursive;
+  font-size: 5vw;
+  font-weight: 500;
+  mix-blend-mode: difference;
+  color: #ffffff;
+  position: absolute;
+  top: 130vh;
+  opacity: 0;
+}
+.my-name2b {
+  font-family: "Unbounded", cursive;
+  font-size: 5vw;
+  font-weight: 500;
+  mix-blend-mode: difference;
+  color: #ffffff;
+  position: absolute;
+  top: 130vh;
+  right: 0vw;
+  opacity: 0;
+}
+.my-name3b {
+  font-family: "Unbounded", cursive;
+  font-size: 15vw;
+  font-weight: 600;
+  color: #ffffff;
+  mix-blend-mode: difference;
+  position: absolute;
+  top: 145vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.my-name3-con {
+  mix-blend-mode: difference;
+}
 .my-job-name {
   width: max-content;
   font-family: "Unbounded", cursive;
@@ -89,16 +126,17 @@ body {
   position: absolute;
   color: white;
   top: 45vh;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  opacity: 0.4;
+  text-align: center;
 }
 .my-job-name span {
   background: -webkit-linear-gradient(60deg, #e251e2, #62f8df);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  margin-right: -1.1vw;
+}
+.my-job-name .divider {
+  background: -webkit-linear-gradient(60deg, #62f8df, #ffffff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 .scroll-down {
   position: absolute;
@@ -151,21 +189,8 @@ body {
   }
 }
 .my-proj {
-  background-image: linear-gradient(
-    to top,
-    #070707,
-    #090909,
-    #0b0b0b,
-    #0d0d0d,
-    #0f0f0f,
-    #0f0f10,
-    #0e0e10,
-    #0e0e11,
-    #0b0b11,
-    #080812,
-    #040412,
-    #010112
-  );
+  background: rgb(1, 0, 19);
+  background: linear-gradient(128deg, #010013 0%, #011e25 48%, #090909 100%);
   height: 300vh;
   color: #f0f8ff;
   text-align: center;
@@ -175,22 +200,40 @@ body {
 }
 .my-proj h1 {
   font-family: "Unbounded", cursive;
-  padding: 2vw 0 1vw 0;
   font-size: clamp(1rem, 10vw, 2rem);
+  margin: 3vw 0 2vw 0;
 }
 .my-proj .card {
   margin-bottom: 25vh;
   height: max-content;
   border-radius: 20px;
   max-width: 70vw;
-  min-height: 70vh;
-  background: #141414;
+  background: #050505;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px 30px 30px 0;
+}
+.my-proj .image-card img {
+  width: 30vw;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.my-proj .left-card,
+.my-proj .right-card {
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
+.my-proj .right-card {
+  flex-direction: column;
+}
 .my-proj .title-card {
+  margin: 20px 0 0 0;
   font-size: clamp(1rem, 10vw, 2rem);
 }
 .my-proj .desc-card {
+  margin: 20px 0 0 0;
   font-size: clamp(0.5rem, 5vw, 1rem);
 }
 @media only screen and (max-width: 1450px) {
