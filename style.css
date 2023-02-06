@@ -216,7 +216,8 @@ body {
 }
 .my-proj .image-card img {
   width: 30vw;
-  object-fit: cover;
+  height: 55vh;
+  object-fit: scale-down;
   border-radius: 20px;
 }
 .my-proj .left-card,

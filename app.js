@@ -116,7 +116,7 @@ if (w <= 650) {
   gsap.to(".my-name1b", {
     scrollTrigger: {
       trigger: ".my-name1b",
-      start: "-550",
+      start: "-600",
       end: "-450",
       scrub: 6,
       toggleActions: "play none none reverse",
@@ -127,7 +127,7 @@ if (w <= 650) {
   gsap.to(".my-name2b", {
     scrollTrigger: {
       trigger: ".my-name1b",
-      start: "-550",
+      start: "-600",
       end: "-450",
       scrub: 6,
       toggleActions: "play none none reverse",
