@@ -100,7 +100,6 @@ cards.forEach((card) => {
   gsap.to(card, {
     scrollTrigger: {
       trigger: card,
-      markers: true,
       toggleActions: "play none none reset",
     },
     duration: 1.2,
