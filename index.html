@@ -23,16 +23,18 @@
       <div class="scroll-down">
         <span class="line"></span>
       </div>
-      <div class="scroll-text"><span>PROJECTS</span></div>
+      <div class="scroll-text linkhover" onclick="scrollProjects()">
+        <span>PROJECTS</span>
+      </div>
     </section>
     <section class="my-img my-img-end">
       <div class="my-name1b">JAMES</div>
       <div class="my-name2b">CARLO</div>
       <div class="my-name3b-con"><div class="my-name3b">MAYRINA</div></div>
     </section>
-    <section class="my-proj">
+    <section class="my-proj" id="projects">
       <h1>PROJECTS</h1>
-      <div class="card">
+      <div class="card linkhover" onclick="link1()">
         <div class="left-card">
           <div class="image-card">
             <img src="./image/AffordableHomesPH1.png" alt="my first website" />
@@ -49,7 +51,7 @@
           </div>
         </div>
       </div>
-      <div class="card">
+      <div class="card linkhover" onclick="link2()">
         <div class="left-card">
           <div class="image-card">
             <img src="./image/Phoodie1.jpeg" alt="Phoodie" />
@@ -71,7 +73,7 @@
           </div>
         </div>
       </div>
-      <div class="card">
+      <div class="card linkhover" onclick="link3()">
         <div class="left-card">
           <div class="image-card">
             <img src="./image/lakbai.png" alt="lakbai" />
@@ -95,6 +97,8 @@
         </div>
       </div>
     </section>
+    <div class="inner-cursor"></div>
+    <div class="outer-cursor"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     <script defer src="./app.js"></script>

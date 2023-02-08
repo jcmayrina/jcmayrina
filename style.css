@@ -5,12 +5,14 @@ font-family: "Unbounded", cursive;
  */
 html,
 body {
+  cursor: none;
   margin: 0;
   padding: 0;
   background: linear-gradient(to right, #050505, #333333);
   color: #f0f8ff;
   overflow-x: hidden !important;
   font-family: "Roboto Mono", monospace;
+  scroll-behavior: smooth;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -245,18 +247,48 @@ body {
   margin: 20px 0 0 0;
   font-size: clamp(0.5rem, 5vw, 1rem);
 }
+.inner-cursor {
+  position: fixed;
+  left: 10px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  z-index: 99999999;
+  transition: width 0.5s, height 0.5s;
+}
+.inner-cursor.grow {
+  height: 30px;
+  width: 30px;
+  transition: width 0.5s, height 0.5s;
+}
+.outer-cursor {
+  position: fixed;
+  left: 10px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+  pointer-events: none;
+  z-index: 99999999;
+}
 @media only screen and (max-width: 1450px) {
   .my-name1 {
-    top: 11vh;
+    top: 15vh;
   }
   .my-name2 {
-    top: 11vh;
+    top: 15vh;
   }
   .my-name3 {
     top: -47vh;
   }
   .my-job-name {
-    top: 35vh;
+    top: 37vh;
   }
 }
 
