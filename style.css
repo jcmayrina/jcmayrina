@@ -261,9 +261,9 @@ body {
   transition: width 0.5s, height 0.5s;
 }
 .inner-cursor.grow {
-  height: 30px;
-  width: 30px;
-  transition: width 0.5s, height 0.5s;
+  height: 40px;
+  width: 40px;
+  transition: width 0.2s, height 0.2s;
 }
 .outer-cursor {
   position: fixed;
@@ -279,6 +279,35 @@ body {
 }
 .not-done {
   display: none;
+}
+.contact {
+  font-family: "Unbounded", cursive;
+  background: #000000;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+.contact a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.contact h5:nth-child(4) {
+  margin-left: 150px;
+}
+.contact h6 {
+  font-family: "Roboto Mono", monospace;
+  margin-left: 20px;
+}
+.contact h6:hover {
+  color: #b2d3db;
+  transition: ease 0.3s;
+}
+.contact a:hover {
+  cursor: none;
+  color: #b2d3db;
+  transition: ease 0.3s;
 }
 @media only screen and (max-width: 1450px) {
   .my-name1 {
